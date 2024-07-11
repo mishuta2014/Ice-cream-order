@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  justify-content: center;
+  align-items: center;
+}
+.top {
+  flex: 1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 6vh;
+  color: rgb(35, 54, 55);
+}
+.container {
+  display: flex;
+  flex: 4;
+  width: 100vw;
+}
+.left {
+  height: 80vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+}
+select {
+  height: 10%;
+  width: 45%;
+  background-color: rgba(242, 255, 0, 0.344);
+  color: rgb(96, 116, 126);
+  border-radius: 20px;
+  padding-left: 5%;
+  font-size: large;
+}
+select:hover {
+  background-color: rgba(59, 179, 12, 0.344);
+}
+.right {
+  height: 60vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.counter {
+  font-size: x-large;
+  border: 3px solid rgb(77, 113, 78);
+  border-radius: 10px;
+  padding: 3% 10% 3% 10%;
+  background-color: rgba(12, 169, 116, 0.66);
+
+  color: rgb(197, 249, 199);
+}
+.butn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 8vw;
+  background-color: rgba(57, 66, 57, 0.524);
+  font-size: 1rem;
+  padding: 1vh;
+  border-radius: 10px;
+  color: rgb(197, 249, 199);
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.submit {
+  height: 10vh;
+  width: 13vw;
+  background-color: rgba(0, 128, 0, 0.524);
+  font-size: 2rem;
+}
+.submit:hover {
+  background-color: rgba(0, 128, 0, 0.798);
+}
+button:hover {
+  background-color: rgba(46, 48, 46, 0.798);
+}
+.complete {
+  display: none;
+  z-index: 100000;
+  background-color: rgb(27, 189, 86);
+  height: 50vh;
+  width: 50vw;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8vh;
+  align-items: center;
+  font-size: 3vw;
+  color: rgb(136, 255, 144);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5vh;
+  border: #09655e 1px solid;
+}
+p{
+  font-size: 3vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #2c5d27;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice-Cream</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="top"><h1>Ice-Cream</h1></div>
+    <div class="container">
+      <div class="left">
+        <select id="brand">
+          <option value="rud">Рудь</option>
+          <option value="roshen">Roshen</option>
+          <option value="laska">Laska</option>
+          <option value="threeBears">Три Ведмеді</option>
+        </select>
+        <select id="flavor">
+          <option value="vanilla">Ваніль</option>
+          <option value="chocolate">Шоколад</option>
+          <option value="strawberry">Полуниця</option>
+          <option value="lemon">Лимон</option>
+        </select>
+        <select id="scoops">
+          <option value="1">1 кулька</option>
+          <option value="2">2 кульки</option>
+          <option value="3">3 кульки</option>
+        </select>
+        <select id="topping">
+          <option value="none">Без топінгу</option>
+          <option value="raspberry">Карамель</option>
+          <option value="chocolate">Горіх</option>
+          <option value="caramel">Банан</option>
+          <option value="orange">Помаранч</option>
+        </select>
+        <select id="cone">
+          <option value="paper">Паперовий ріжок</option>
+          <option value="waffle">Вафельний ріжок</option>
+        </select>
+      </div>
+      <div class="right">
+        <div class="counter">Разом: <span id="total">0</span>₴</div>
+        <div class="butn">
+          <button class="submit">Замовити</button>
+          <button id="zero">Скинути</button>
+        </div>
+      </div>
+    </div>
+    <div class="complete"><span>Дякуємо за замовлення! <p>Очікуйте на касі</p></span>
+      
+    <button id="closeButn">X</button></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
