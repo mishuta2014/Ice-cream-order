@@ -17,12 +17,13 @@ fetch("list.json")
     initializeForm();
   })
   .catch((error) => console.error("Error fetching the JSON file:", error));
-const initializeForm = () => {
+
+  const initializeForm = () => {
   updateFlavorOptions();
   initializeToppingOptions();
   initializeConeOptions();
-  updateTotal();
 };
+
 const updateFlavorOptions = () => {
   const brand = brandSelect.value;
   flavorSelect.innerHTML = "";
