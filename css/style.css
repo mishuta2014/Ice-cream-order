@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  background: #11998e; /* fallback for old browsers */
+  background: #0a5c55; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #38ef7d,
-    #11998e
+    #2ab05d,
+    #0c645d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #38ef7d,
-    #11998e
+    #2fda71,
+    #0a8c81
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: 100vh;
@@ -118,7 +118,7 @@ button:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 5vh;
   border: #09655e 1px solid;
-  box-shadow: 0 0  0 100vw rgba(0, 0, 0, 0.66);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.66);
 }
 p {
   font-size: 3vh;
@@ -126,4 +126,74 @@ p {
   display: flex;
   justify-content: center;
   color: #2c5d27;
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .top {
+    flex: none;
+    padding: 1rem 0;
+  }
+
+  h1 {
+    font-size: 4vh;
+  }
+
+  .container {
+    flex-direction: column;
+    flex: none;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+  }
+
+  .left,
+  .right {
+    height: auto;
+    flex: 1;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  select {
+    height: 5rem;
+    width: 80%;
+    font-size: medium;
+  }
+
+  .counter {
+    font-size: large;
+    padding: 1rem;
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 35px;
+  }
+
+  button,
+  .submit {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  #closeButn {
+    width: 50%;
+  }
+
+  .complete {
+    height: 70vh;
+    width: 80vw;
+    font-size: 5vw;
+    border-radius: 2rem;
+  }
+
+  p {
+    font-size: 2vh;
+  }
 }
